@@ -1,0 +1,340 @@
+                html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+
+}
+
+a{    text-decoration: none; }
+
+a:hover{ text-decoration: none;  }
+
+li{    list-style: none;  }
+
+p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #606060;
+}
+
+.header{
+
+ background-color: #280137;
+}
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: 0.3;
+    z-index: -1;
+
+}
+.navbar{
+
+ background-color: darkblue;   
+
+}
+.navbar::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.nav-item a{
+    color: #fff!important;
+    font-weight: bold;
+}
+.banner-section{
+
+ background-color: #aa8833;
+        
+}
+@media only screen and (min-width: 196px) and (max-width: 590px) {
+ .banner-section{
+
+ width: 100%;       
+}
+}
+
+.main-title {
+    font-size: 72px;
+    font-weight: 500;
+font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+.main-p {
+    font-size: 24px;
+    font-weight: 500;
+     color: darkblue;
+
+ }
+
+.mian-btn {
+background: purple;
+    padding: 20px 45px;
+    border-radius: 35px;
+}
+#readbtn{
+    color: #fff;
+}
+.bg-white {
+    background: darkblue !important;
+}
+
+.bg-white.scrolled {
+    background: white !important;
+}
+
+        .pentagon {
+            max-width: 100%; /* Removed width property to allow responsiveness */
+            height: auto;
+            background-color: darkblue;
+            position: relative;
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        }
+
+        .pentagon img {
+            width: 80%;
+            height: 80%;
+            object-fit: cover;
+            border-radius: 8%;
+        }
+.featuresection{
+    margin-top:50px;
+}
+
+
+    .custom-dots {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: purple;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+
+    .dot.active {
+      background-color: #717171;
+    }
+
+    .card {
+      background-color: #aa8833;
+      border-color: #aa8833;
+      color: #fff;
+height: auto;
+
+    }
+
+    .btn {
+      color: #fff;
+background-color: darkblue;
+    }
+.float-right{
+  font-size: 25px;
+
+}
+    .float-right.clicked {
+      color: darkblue;
+    }
+
+.productsection{
+    margin-top:50px;
+}
+
+
+.contact-section {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(160deg, #aa8833 50%, #fff 0%);
+margin-top: 30px;
+color: #fff;
+}
+
+form {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 600px) {
+    form {
+        max-width: 100%;
+    }
+}
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: navy;
+  color: #fff;
+}
+
+.column {
+  width: 48%;
+}
+
+@media only screen and (max-width: 768px) {
+  .column {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+.footersection{
+    width: 100%;
+    height: auto;
+    padding: 70px 0 20px 0;
+    background: navy;
+    position: relative;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.footersection li a{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+
+.footersection h3{
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 1.2rem!important;
+    font-weight: 600;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+   color: #fff;
+
+}
+
+#myBtn{
+    /* display: none; */
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+background-color: darkblue;
+}
+
+#myBtn:hover{
+    background: #280137;
+}
+
+@media(max-width: 768px){
+    .nav-item{
+        text-align: center!important;
+    }
+
+    .pricing, .happyclients, .contactus{
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .card-second{
+        transform: translateY(0px);
+        margin: 30px 0;
+    }
+
+    .contactus{
+        padding: 0 50px;
+    }
+
+    .footer-div:nth-child(2){
+ text-align: left!important;
+    }
+
+    .footer-div{
+        margin: 30px 0;
+    }
+}
+    .footer-div p{
+        color: #fff;
+    }
+.copyright{
+    color: #fff;
+}
+
+#wishlistbtn {
+    color:#aa8833;
+
+}
+#Loginbtn{
+    color:#aa8833;
+ 
+}
+    #login-container {
+      position: relative;
+      max-width: 400px;
+      width: 100%;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: none;
+      animation: bounceIn 0.5s ease;
+    }
+
+Responsive E-commerce Food Shop Website Using Bootstrap-5
